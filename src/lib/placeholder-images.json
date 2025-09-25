@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-gym",
+      "description": "A modern gym interior with various workout equipment.",
+      "imageUrl": "https://images.unsplash.com/photo-1671970922029-0430d2ae122c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxneW0lMjBpbnRlcmlvcnxlbnwwfHx8fDE3NTg3MjgzNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gym interior"
+    },
+    {
+      "id": "value-strength",
+      "description": "Close up of weights in a gym.",
+      "imageUrl": "https://images.unsplash.com/photo-1728486144678-95cb7c5f7463?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxneW0lMjB3ZWlnaHRzfGVufDB8fHx8MTc1ODc0NDQ3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gym weights"
+    },
+    {
+      "id": "value-community",
+      "description": "Group of people in a fitness class.",
+      "imageUrl": "https://images.unsplash.com/photo-1591258370814-01609b341790?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaXRuZXNzJTIwY2xhc3N8ZW58MHx8fHwxNzU4ODA0MzM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fitness class"
+    },
+    {
+      "id": "value-tech",
+      "description": "Person using a fitness tracking app on a phone.",
+      "imageUrl": "https://images.unsplash.com/photo-1727432813810-cabde273e273?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmaXRuZXNzJTIwYXBwfGVufDB8fHx8MTc1ODc0NDg2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fitness app"
+    },
+    {
+      "id": "class-yoga",
+      "description": "A serene yoga class in session.",
+      "imageUrl": "https://images.unsplash.com/photo-1644612105654-b6b0a941ecde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx5b2dhJTIwY2xhc3N8ZW58MHx8fHwxNzU4NzA2OTY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "yoga class"
+    },
+    {
+      "id": "class-hiit",
+      "description": "High-intensity interval training session.",
+      "imageUrl": "https://images.unsplash.com/photo-1434596922112-19c563067271?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaWl0JTIwd29ya291dHxlbnwwfHx8fDE3NTg4MDQzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hiit workout"
+    },
+    {
+      "id": "class-strength",
+      "description": "A person lifting weights during a strength training class.",
+      "imageUrl": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWlnaHQlMjBsaWZ0aW5nfGVufDB8fHx8MTc1ODczMDc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "weight lifting"
+    },
+    {
+      "id": "class-cycling",
+      "description": "An energetic indoor cycling class.",
+      "imageUrl": "https://images.unsplash.com/photo-1630415187908-39d6d209b15c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjeWNsaW5nJTIwY2xhc3N8ZW58MHx8fHwxNzU4ODA0MzMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cycling class"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a smiling gym member.",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1559855603-ce4c8f480d76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzbWlsaW5nJTIwd29tYW58ZW58MHx8fHwxNzU4NzcyOTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling woman"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of a confident gym member.",
+      "imageUrl": "https://images.unsplash.com/photo-1548372290-8d01b6c8e78c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25maWRlbnQlMjBtYW58ZW58MHx8fHwxNzU4ODA0MzMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "confident man"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Portrait of a happy gym member post-workout.",
+      "imageUrl": "https://images.unsplash.com/photo-1525186402429-b4ff38bedec6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoYXBweSUyMHBlcnNvbnxlbnwwfHx8fDE3NTg3OTEzNjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy person"
+    }
+  ]
 }
