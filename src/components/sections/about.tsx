@@ -42,10 +42,11 @@ export default function About() {
                 {image && (
                    <div className="w-full h-48 relative">
                     <Image
-                      src={image.imageUrl}
-                      alt={image.description}
+                      src={image.imageUrl || ''}
+                      alt={image.description || ''}
                       data-ai-hint={image.imageHint}
                       fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover"
                     />
                    </div>
