@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Logo className="h-8 w-auto" />
             <p className="text-muted-foreground">
-              The ultimate fitness destination, powered by AI to help you achieve your goals faster.
+             Your ultimate destination for fitness and well-being. Join us to transform your body and mind.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary"><Twitter /></a>
@@ -26,7 +26,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span>contact@flexaigym.com</span>
+                <span>contact@flexfitgym.in</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t text-center text-muted-foreground text-sm">
-          <p>&copy; {new Date().getFullYear()} FlexAI Gym. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Flex Fit Gym. All rights reserved.</p>
         </div>
       </div>
     </footer>

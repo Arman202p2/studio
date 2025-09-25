@@ -8,31 +8,31 @@ import { Clock, User } from 'lucide-react';
 const classesData = [
   {
     category: 'Mind & Body',
-    name: 'Sunrise Yoga',
+    name: 'Yoga',
     instructor: 'Anna K.',
     time: '7:00 AM - 8:00 AM',
-    description: 'Start your day with energizing yoga flows to improve flexibility and mindfulness.',
+    description: 'Improve flexibility, strength, and mental clarity with our rejuvenating yoga classes suitable for all levels.',
     imageId: 'class-yoga'
   },
   {
     category: 'Cardio',
-    name: 'HIIT Blast',
+    name: 'Zumba',
     instructor: 'Mike R.',
     time: '6:00 PM - 6:45 PM',
-    description: 'A high-intensity interval training session to maximize calorie burn and boost metabolism.',
+    description: 'A high-energy dance fitness program that combines Latin and international music with contagious steps.',
     imageId: 'class-hiit'
   },
   {
     category: 'Strength',
-    name: 'Total Body Strength',
+    name: 'CrossFit',
     instructor: 'Sarah T.',
     time: '7:00 PM - 8:00 PM',
-    description: 'Build lean muscle and increase your strength with this full-body workout.',
+    description: 'A high-intensity workout program that combines elements of weightlifting, gymnastics, and metabolic conditioning.',
     imageId: 'class-strength'
   },
   {
     category: 'Cardio',
-    name: 'Cycle Fusion',
+    name: 'Spinning',
     instructor: 'David L.',
     time: '5:30 PM - 6:15 PM',
     description: 'An energetic indoor cycling class with great music and motivating coaching.',
@@ -40,7 +40,7 @@ const classesData = [
   },
    {
     category: 'Mind & Body',
-    name: 'Evening Pilates',
+    name: 'Pilates',
     instructor: 'Anna K.',
     time: '8:00 PM - 9:00 PM',
     description: 'Strengthen your core and improve posture with controlled movements.',
@@ -48,10 +48,10 @@ const classesData = [
   },
   {
     category: 'Strength',
-    name: 'Powerlifting Prep',
+    name: 'Strength Training',
     instructor: 'Sarah T.',
     time: '9:00 AM - 10:00 AM',
-    description: 'Focus on the big three lifts: squat, bench, and deadlift with expert coaching.',
+    description: 'Build muscle and increase strength with our comprehensive strength training programs.',
     imageId: 'class-strength'
   }
 ];
@@ -63,7 +63,7 @@ export default function Classes() {
     <section id="classes" className="py-16 md:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold">Find Your Class</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Services</h2>
           <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
             We offer a wide variety of classes to suit all fitness levels and interests. Find your favorite and book your spot!
           </p>

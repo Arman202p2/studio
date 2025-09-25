@@ -1,25 +1,25 @@
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Dumbbell, Users, BrainCircuit } from 'lucide-react';
+import { Dumbbell, Users, HeartPulse } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const values = [
   {
     icon: Dumbbell,
-    title: 'Unleash Strength',
-    description: 'We provide state-of-the-art equipment and expert trainers to help you build physical and mental strength.',
+    title: 'Modern Equipment',
+    description: 'We provide a wide range of modern and high-quality fitness equipment to help you achieve your goals effectively.',
     imageId: 'value-strength',
   },
   {
     icon: Users,
-    title: 'Build Community',
-    description: 'Join a supportive and motivating community of fitness enthusiasts who cheer for your success.',
+    title: 'Expert Trainers',
+    description: 'Our certified and experienced trainers are dedicated to providing personalized guidance and support.',
     imageId: 'value-community',
   },
   {
-    icon: BrainCircuit,
-    title: 'Embrace Technology',
-    description: 'Our AI-powered tools offer personalized insights and plans to optimize your workout and accelerate results.',
+    icon: HeartPulse,
+    title: 'Vibrant Community',
+    description: 'Join a welcoming and motivating community that fosters a positive and healthy lifestyle.',
     imageId: 'value-tech',
   },
 ];
@@ -29,9 +29,9 @@ export default function About() {
     <section id="about" className="py-16 md:py-24 bg-card">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold">More Than Just a Gym</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">About Flex Fit Gym</h2>
           <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-            At FlexAI, we blend cutting-edge technology with a passion for fitness to create a truly personalized experience. Our mission is to empower you to achieve your best self.
+            Welcome to Flex Fit Gym, your ultimate destination for fitness and well-being. Our mission is to provide a supportive and dynamic environment where you can challenge yourself, achieve your goals, and transform your life. 
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

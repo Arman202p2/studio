@@ -1,7 +1,7 @@
 'use server';
 
 /**
- * @fileOverview Implements an AI-powered chatbot assistant for FlexAI Gym.
+ * @fileOverview Implements an AI-powered chatbot assistant for Flex Fit Gym.
  *
  * - aiChatbotAssistant - The main function to interact with the chatbot.
  * - AiChatbotAssistantInput - The input type for the aiChatbotAssistant function.
@@ -29,11 +29,11 @@ const prompt = ai.definePrompt({
   name: 'aiChatbotAssistantPrompt',
   input: {schema: AiChatbotAssistantInputSchema},
   output: {schema: AiChatbotAssistantOutputSchema},
-  prompt: `You are a helpful AI chatbot assistant for FlexAI Gym.
+  prompt: `You are a helpful AI chatbot assistant for Flex Fit Gym.
 
   Your goal is to answer user queries about the gym, classes, membership options, and provide personalized guidance.
 
-  Use the following information about FlexAI Gym to answer the user's question:
+  Use the following information about Flex Fit Gym to answer the user's question:
   - Flex Fit Gym is located in Bangalore, India.
   - It offers a variety of fitness classes and modern amenities.
   - Visit https://www.flexfitgym.in/ for more information.
