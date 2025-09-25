@@ -1,88 +1,113 @@
-import Image from 'next/image';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Clock, User } from 'lucide-react';
+import Image from "next/image";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Clock, User } from "lucide-react";
 
 const classesData = [
   {
-    category: 'Mind & Body',
-    name: 'Yoga',
-    instructor: 'Anna K.',
-    time: '7:00 AM - 8:00 AM',
-    description: 'Improve flexibility, strength, and mental clarity with our rejuvenating yoga classes suitable for all levels.',
-    imageId: 'class-yoga'
+    category: "Mind & Body",
+    name: "Yoga",
+    instructor: "Anna K.",
+    time: "7:00 AM - 8:00 AM",
+    description:
+      "Improve flexibility, strength, and mental clarity with our rejuvenating yoga classes suitable for all levels.",
+    imageId: "class-yoga",
   },
   {
-    category: 'Cardio',
-    name: 'Zumba',
-    instructor: 'Mike R.',
-    time: '6:00 PM - 6:45 PM',
-    description: 'A high-energy dance fitness program that combines Latin and international music with contagious steps.',
-    imageId: 'class-hiit'
+    category: "Cardio",
+    name: "Zumba",
+    instructor: "Mike R.",
+    time: "6:00 PM - 6:45 PM",
+    description:
+      "A high-energy dance fitness program that combines Latin and international music with contagious steps.",
+    imageId: "class-hiit",
   },
   {
-    category: 'Strength',
-    name: 'CrossFit',
-    instructor: 'Sarah T.',
-    time: '7:00 PM - 8:00 PM',
-    description: 'A high-intensity workout program that combines elements of weightlifting, gymnastics, and metabolic conditioning.',
-    imageId: 'class-strength'
+    category: "Strength",
+    name: "CrossFit",
+    instructor: "Sarah T.",
+    time: "7:00 PM - 8:00 PM",
+    description:
+      "A high-intensity workout program that combines elements of weightlifting, gymnastics, and metabolic conditioning.",
+    imageId: "class-strength",
   },
   {
-    category: 'Cardio',
-    name: 'Spinning',
-    instructor: 'David L.',
-    time: '5:30 PM - 6:15 PM',
-    description: 'An energetic indoor cycling class with great music and motivating coaching.',
-    imageId: 'class-cycling'
-  },
-   {
-    category: 'Mind & Body',
-    name: 'Pilates',
-    instructor: 'Anna K.',
-    time: '8:00 PM - 9:00 PM',
-    description: 'Strengthen your core and improve posture with controlled movements.',
-    imageId: 'class-yoga'
+    category: "Cardio",
+    name: "Spinning",
+    instructor: "David L.",
+    time: "5:30 PM - 6:15 PM",
+    description:
+      "An energetic indoor cycling class with great music and motivating coaching.",
+    imageId: "class-cycling",
   },
   {
-    category: 'Strength',
-    name: 'Strength Training',
-    instructor: 'Sarah T.',
-    time: '9:00 AM - 10:00 AM',
-    description: 'Build muscle and increase strength with our comprehensive strength training programs.',
-    imageId: 'class-strength'
-  }
+    category: "Mind & Body",
+    name: "Pilates",
+    instructor: "Anna K.",
+    time: "8:00 PM - 9:00 PM",
+    description:
+      "Strengthen your core and improve posture with controlled movements.",
+    imageId: "class-yoga",
+  },
+  {
+    category: "Strength",
+    name: "Strength Training",
+    instructor: "Sarah T.",
+    time: "9:00 AM - 10:00 AM",
+    description:
+      "Build muscle and increase strength with our comprehensive strength training programs.",
+    imageId: "class-strength",
+  },
 ];
 
-const categories = ['All', 'Mind & Body', 'Cardio', 'Strength'];
+const categories = ["All", "Mind & Body", "Cardio", "Strength"];
 
 export default function Classes() {
   return (
     <section id="classes" className="py-16 md:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Services</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">
+            Our Services
+          </h2>
           <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-            We offer a wide variety of classes to suit all fitness levels and interests. Find your favorite and book your spot!
+            We offer a wide variety of classes to suit all fitness levels and
+            interests. Find your favorite and book your spot!
           </p>
         </div>
 
         <Tabs defaultValue="All" className="w-full">
           <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
-            {categories.map(category => (
-              <TabsTrigger key={category} value={category}>{category}</TabsTrigger>
+            {categories.map((category) => (
+              <TabsTrigger key={category} value={category}>
+                {category}
+              </TabsTrigger>
             ))}
           </TabsList>
-          
-          {categories.map(category => (
+
+          {categories.map((category) => (
             <TabsContent key={category} value={category}>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {(category === 'All' ? classesData : classesData.filter(c => c.category === category)).map(cls => {
-                  const image = PlaceHolderImages.find(p => p.id === cls.imageId);
+                {(category === "All"
+                  ? classesData
+                  : classesData.filter((c) => c.category === category)
+                ).map((cls) => {
+                  const image = PlaceHolderImages.find(
+                    (p) => p.id === cls.imageId
+                  );
                   return (
-                    <Card key={cls.name} className="flex flex-col overflow-hidden">
+                    <Card
+                      key={cls.name}
+                      className="flex flex-col overflow-hidden"
+                    >
                       <CardHeader className="p-0">
                         {image && (
                           <div className="relative h-56 w-full">
@@ -91,24 +116,37 @@ export default function Classes() {
                               alt={image.description}
                               data-ai-hint={image.imageHint}
                               fill
+                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                               className="object-cover"
                             />
                           </div>
                         )}
                       </CardHeader>
                       <CardContent className="p-6 flex-grow">
-                        <CardTitle className="font-headline mb-2">{cls.name}</CardTitle>
-                        <p className="text-muted-foreground text-sm">{cls.description}</p>
+                        <CardTitle className="font-headline mb-2">
+                          {cls.name}
+                        </CardTitle>
+                        <p className="text-muted-foreground text-sm">
+                          {cls.description}
+                        </p>
                       </CardContent>
                       <CardFooter className="flex flex-col items-start gap-4 p-6 pt-0">
                         <div className="w-full border-t pt-4 space-y-2 text-sm text-muted-foreground">
-                            <p className="flex items-center gap-2"><Clock className="w-4 h-4 text-primary" /> {cls.time}</p>
-                            <p className="flex items-center gap-2"><User className="w-4 h-4 text-primary" /> {cls.instructor}</p>
+                          <p className="flex items-center gap-2">
+                            <Clock className="w-4 h-4 text-primary" />{" "}
+                            {cls.time}
+                          </p>
+                          <p className="flex items-center gap-2">
+                            <User className="w-4 h-4 text-primary" />{" "}
+                            {cls.instructor}
+                          </p>
                         </div>
-                        <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">Book Now</Button>
+                        <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                          Book Now
+                        </Button>
                       </CardFooter>
                     </Card>
-                  )
+                  );
                 })}
               </div>
             </TabsContent>
