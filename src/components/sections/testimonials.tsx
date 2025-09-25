@@ -14,13 +14,13 @@ const testimonials = [
   {
     name: 'Priya S.',
     title: 'Lost 10 Kgs!',
-    quote: "FlexAI's personalized plan was a game-changer! I finally broke through my plateau and feel more energetic than ever. The community here is so supportive.",
+    quote: "Flex Fit Gym's personalized plan was a game-changer! I finally broke through my plateau and feel more energetic than ever. The community here is so supportive.",
     imageId: 'testimonial-1',
   },
   {
     name: 'Rohan M.',
     title: 'Gained Muscle & Confidence',
-    quote: "The strength training programs and the AI suggestions helped me train smarter, not just harder. I've seen more progress in 3 months than I did in a year elsewhere.",
+    quote: "The strength training programs and the expert trainers helped me train smarter, not just harder. I've seen more progress in 3 months than I did in a year elsewhere.",
     imageId: 'testimonial-2',
   },
   {
@@ -38,7 +38,7 @@ export default function Testimonials() {
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Success Stories</h2>
           <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-            Hear what our members have to say about their journey with FlexAI Gym.
+            Hear what our members have to say about their journey with Flex Fit Gym.
           </p>
         </div>
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { useActionState } from 'react';
+import { useActionState, useEffect } from 'react';
 import { useFormStatus } from 'react-dom';
 import { handleWorkoutPlanGeneration, type WorkoutFormState } from '@/app/actions';
 import { Button } from '@/components/ui/button';
@@ -9,7 +9,6 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
-import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { Dumbbell, Zap } from 'lucide-react';
 
@@ -50,7 +49,7 @@ export default function WorkoutPlanner() {
         <div className="space-y-4">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">Your Personal AI Trainer</h2>
             <p className="text-muted-foreground text-lg">
-                Tell us about your goals, and our AI will craft a unique workout plan just for you, incorporating classes and equipment available at FlexAI Gym.
+                Tell us about your goals, and our AI will craft a unique workout plan just for you, incorporating classes and equipment available at Flex Fit Gym.
             </p>
             <Card>
                 <CardHeader>
