@@ -1,6 +1,7 @@
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { handleWorkoutPlanGeneration, type WorkoutFormState } from '@/app/actions';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -27,7 +28,7 @@ function SubmitButton() {
 }
 
 export default function WorkoutPlanner() {
-  const [state, formAction] = useFormState(handleWorkoutPlanGeneration, initialState);
+  const [state, formAction] = useActionState(handleWorkoutPlanGeneration, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
